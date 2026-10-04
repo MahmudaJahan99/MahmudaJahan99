@@ -2,10 +2,10 @@
      fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <style>
-    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap");
     </style>
 
-    <defs>
+  <defs>
 
     <!-- Background -->
     <linearGradient id="background"
@@ -16,7 +16,7 @@
         <stop offset="1" stop-color="#15111C"/>
     </linearGradient>
 
-    <!-- Lavender ambient glow -->
+    <!-- Lavender glow -->
     <radialGradient id="lavenderGlow"
         cx="0" cy="0" r="1"
         gradientUnits="userSpaceOnUse"
@@ -69,40 +69,37 @@
         flood-opacity="0.32"/>
     </filter>
 
-    </defs>
+  </defs>
 
 
-<!-- ========================================================= -->
-<!-- BACKGROUND -->
-<!-- ========================================================= -->
+  <!-- ========================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================================= -->
 
-<rect
-  width="1200"
-  height="700"
-  rx="28"
-  fill="url(#background)"
-/>
+  <rect
+    width="1200"
+    height="700"
+    rx="28"
+    fill="url(#background)"
+  />
 
-
-<!-- Ambient glows -->
-
-<ellipse
-  cx="180"
-  cy="90"
-  rx="270"
-  ry="190"
-  fill="url(#lavenderGlow)"
-  filter="url(#blur)"
-/>
-
-<ellipse
-  cx="1030"
-  cy="610"
-  rx="280"
-  ry="200"
-  fill="url(#sageGlow)"
-  filter="url(#blur)"
-/>
+  <!-- Ambient glows -->
+  <ellipse
+    cx="180"
+    cy="90"
+    rx="270"
+    ry="190"
+    fill="url(#lavenderGlow)"
+    filter="url(#blur)"
+  />
+  <ellipse
+    cx="1030"
+    cy="610"
+    rx="280"
+    ry="200"
+    fill="url(#sageGlow)"
+    filter="url(#blur)"
+  />
 
 
 <!-- ========================================================= -->
