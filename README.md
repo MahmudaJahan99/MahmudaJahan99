@@ -13,3 +13,11 @@
     width="100%"
   />
 </p>
+
+<p align="center">
+  <img
+    src="./.github/assets/techs.svg"
+    alt="Mahmuda Jahan — Technology Stack"
+    width="100%"
+  />
+</p>

@@ -1,0 +1,741 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap");
+  </style>
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="background"
+      x1="0" y1="0"
+      x2="1200" y2="900"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100E14"/>
+      <stop offset="1" stop-color="#15111C"/>
+    </linearGradient>
+
+    <!-- Lavender glow -->
+    <radialGradient id="lavenderGlow"
+      cx="0" cy="0" r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(170 150) rotate(25) scale(380 280)">
+      <stop stop-color="#B69ADE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#B69ADE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sage glow -->
+    <radialGradient id="sageGlow"
+      cx="0" cy="0" r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1050 760) rotate(-25) scale(390 290)">
+      <stop stop-color="#A9C5A5" stop-opacity="0.17"/>
+      <stop offset="1" stop-color="#A9C5A5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass -->
+    <linearGradient id="glass"
+      x1="0" y1="0"
+      x2="0" y2="900"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.045"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
+    </linearGradient>
+
+    <!-- Card glass -->
+    <linearGradient id="cardGlass"
+      x1="0" y1="0"
+      x2="0" y2="230"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.045"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
+    </linearGradient>
+
+    <!-- Blur -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+
+    <!-- Shadow -->
+    <filter id="shadow"
+      x="-20%" y="-20%"
+      width="140%" height="150%">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="22"
+        flood-color="#000000"
+        flood-opacity="0.30"/>
+    </filter>
+
+  </defs>
+
+
+  <!-- ========================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================================= -->
+
+  <rect
+    width="1200"
+    height="900"
+    rx="28"
+    fill="url(#background)"
+  />
+
+  <!-- Ambient glows -->
+  <ellipse
+    cx="170"
+    cy="150"
+    rx="300"
+    ry="210"
+    fill="url(#lavenderGlow)"
+    filter="url(#blur)"
+  />
+  <ellipse
+    cx="1050"
+    cy="760"
+    rx="310"
+    ry="220"
+    fill="url(#sageGlow)"
+    filter="url(#blur)"
+  />
+
+
+  <!-- ========================================================= -->
+  <!-- MAIN GLASS PANEL -->
+  <!-- ========================================================= -->
+
+  <rect
+    x="24"
+    y="24"
+    width="1152"
+    height="852"
+    rx="24"
+    fill="url(#glass)"
+    stroke="#C9B8E8"
+    stroke-opacity="0.13"
+  />
+
+
+  <!-- ========================================================= -->
+  <!-- SECTION HEADER -->
+  <!-- ========================================================= -->
+
+  <text
+    x="600"
+    y="82"
+    text-anchor="middle"
+    fill="#A9C5A5"
+    font-family="Quicksand, sans-serif"
+    font-size="14"
+    font-weight="600"
+    letter-spacing="4">
+    ✦ TECHNOLOGIES I WORK WITH
+  </text>
+
+  <text
+    x="600"
+    y="118"
+    text-anchor="middle"
+    fill="#F5F1F7"
+    font-family="Quicksand, sans-serif"
+    font-size="21"
+    font-weight="500">
+    Tools for turning ideas into products
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CARD 1 — FRONTEND -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M60 155
+        H1118
+        A22 22 0 0 1 1140 172
+        V343
+        A22 22 0 0 1 1118 365
+        H60
+        Z"
+    fill="url(#cardGlass)"
+    stroke="#C9B8E8"
+    stroke-opacity="0.16"
+    filter="url(#shadow)"
+  />
+
+  <rect
+    x="60"
+    y="155"
+    width="5"
+    height="210"
+    fill="#C9B8E8"
+    fill-opacity="0.75"
+  />
+
+  <!-- Header -->
+
+  <text
+    x="94"
+    y="193"
+    fill="#C9B8E8"
+    font-family="Quicksand, sans-serif"
+    font-size="19"
+    font-weight="600">
+    FRONTEND
+  </text>
+
+  <text
+    x="94"
+    y="218"
+    fill="#AAA2B4"
+    font-family="Quicksand, sans-serif"
+    font-size="13">
+    Building responsive, component-driven interfaces
+  </text>
+
+
+  <!-- React -->
+
+  <rect x="94" y="247" width="115" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/react/C9B8E8"
+    x="133" y="258"
+    width="34" height="34"/>
+
+  <text x="151" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    React
+  </text>
+
+
+  <!-- Next -->
+
+  <rect x="223" y="247" width="115" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/nextdotjs/C9B8E8"
+    x="262" y="258"
+    width="34" height="34"/>
+
+  <text x="280" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Next.js
+  </text>
+
+
+  <!-- TypeScript -->
+
+  <rect x="352" y="247" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/typescript/C9B8E8"
+    x="397" y="258"
+    width="34" height="34"/>
+
+  <text x="414" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    TypeScript
+  </text>
+
+
+  <!-- Tailwind -->
+
+  <rect x="491" y="247" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/tailwindcss/C9B8E8"
+    x="536" y="258"
+    width="34" height="34"/>
+
+  <text x="553" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Tailwind
+  </text>
+
+
+  <!-- JavaScript -->
+
+  <rect x="630" y="247" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/javascript/C9B8E8"
+    x="675" y="258"
+    width="34" height="34"/>
+
+  <text x="692" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    JavaScript
+  </text>
+
+
+  <!-- Router -->
+
+  <rect x="769" y="247" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/reactrouter/C9B8E8"
+    x="814" y="258"
+    width="34" height="34"/>
+
+  <text x="831" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    React Router
+  </text>
+
+
+  <!-- Zustand -->
+
+  <rect x="908" y="247" width="105" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/zustand/C9B8E8"
+    x="943" y="258"
+    width="34" height="34"/>
+
+  <text x="960" y="311"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Zustand
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CARD 2 — BACKEND -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M60 395
+        H1118
+        A22 22 0 0 1 1140 417
+        V588
+        A22 22 0 0 1 1118 610
+        H60
+        Z"
+    fill="url(#cardGlass)"
+    stroke="#A9C5A5"
+    stroke-opacity="0.16"
+    filter="url(#shadow)"
+  />
+
+  <rect
+    x="60"
+    y="395"
+    width="5"
+    height="215"
+    rx="3"
+    fill="#A9C5A5"
+    fill-opacity="0.75"
+  />
+
+  <text
+    x="94"
+    y="438"
+    fill="#A9C5A5"
+    font-family="Quicksand, sans-serif"
+    font-size="19"
+    font-weight="600">
+    BACKEND &amp; DATA
+  </text>
+
+  <text
+    x="94"
+    y="463"
+    fill="#AAA2B4"
+    font-family="Quicksand, sans-serif"
+    font-size="13">
+    Connecting interfaces with data and services
+  </text>
+
+
+  <!-- Express -->
+
+  <rect x="94" y="492" width="145" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/express/A9C5A5"
+    x="149" y="503"
+    width="34" height="34"/>
+
+  <text x="166" y="556"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Express.js
+  </text>
+
+
+  <!-- PostgreSQL -->
+
+  <rect x="253" y="492" width="150" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/postgresql/A9C5A5"
+    x="311" y="503"
+    width="34" height="34"/>
+
+  <text x="328" y="556"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    PostgreSQL
+  </text>
+
+
+  <!-- MongoDB -->
+
+  <rect x="417" y="492" width="140" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/mongodb/A9C5A5"
+    x="470" y="503"
+    width="34" height="34"/>
+
+  <text x="487" y="556"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    MongoDB
+  </text>
+
+
+  <!-- Prisma -->
+
+  <rect x="571" y="492" width="125" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/prisma/A9C5A5"
+    x="616" y="503"
+    width="34" height="34"/>
+
+  <text x="633" y="556"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Prisma
+  </text>
+
+
+  <!-- REST API -->
+
+  <rect x="710" y="492" width="125" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <text x="772" y="530"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="13"
+    font-weight="600">
+    REST
+  </text>
+
+  <text x="772" y="552"
+    text-anchor="middle"
+    fill="#A9C5A5"
+    font-family="Quicksand, sans-serif"
+    font-size="11">
+    APIs
+  </text>
+
+
+  <!-- Authentication -->
+
+  <rect x="849" y="492" width="125" height="76" rx="15"
+    fill="#A9C5A5" fill-opacity="0.07"
+    stroke="#A9C5A5" stroke-opacity="0.16"/>
+
+  <text x="911" y="530"
+    text-anchor="middle"
+    fill="#C1D9BC"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Authentication
+  </text>
+
+  <text x="911" y="551"
+    text-anchor="middle"
+    fill="#A9C5A5"
+    font-family="Quicksand, sans-serif"
+    font-size="11">
+    &amp; Authorization
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CARD 3 — TOOLS -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M60 640
+        H1118
+        A22 22 0 0 1 1140 662
+        V833
+        A22 22 0 0 1 1118 855
+        H60
+        Z"
+    fill="url(#cardGlass)"
+    stroke="#C9B8E8"
+    stroke-opacity="0.16"
+    filter="url(#shadow)"
+  />
+
+  <rect
+    x="60"
+    y="640"
+    width="5"
+    height="215"
+    rx="3"
+    fill="#C9B8E8"
+    fill-opacity="0.75"
+  />
+
+  <text
+    x="94"
+    y="683"
+    fill="#C9B8E8"
+    font-family="Quicksand, sans-serif"
+    font-size="19"
+    font-weight="600">
+    TOOLS &amp; WORKFLOW
+  </text>
+
+  <text
+    x="94"
+    y="708"
+    fill="#AAA2B4"
+    font-family="Quicksand, sans-serif"
+    font-size="13">
+    Tools that keep development practical and consistent
+  </text>
+
+
+  <!-- Git -->
+
+  <rect x="94" y="737" width="115" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/git/C9B8E8"
+    x="133" y="748"
+    width="34" height="34"/>
+
+  <text x="151" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Git
+  </text>
+
+
+  <!-- GitHub -->
+
+  <rect x="223" y="737" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/github/C9B8E8"
+    x="268" y="748"
+    width="34" height="34"/>
+
+  <text x="285" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    GitHub
+  </text>
+
+
+  <!-- Vite -->
+
+  <rect x="362" y="737" width="115" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/vite/C9B8E8"
+    x="401" y="748"
+    width="34" height="34"/>
+
+  <text x="419" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Vite
+  </text>
+
+
+  <!-- Docker -->
+
+  <rect x="491" y="737" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/docker/C9B8E8"
+    x="536" y="748"
+    width="34" height="34"/>
+
+  <text x="553" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Docker
+  </text>
+
+
+  <!-- Vercel -->
+
+  <rect x="630" y="737" width="125" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/vercel/C9B8E8"
+    x="675" y="748"
+    width="34" height="34"/>
+
+  <text x="692" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Vercel
+  </text>
+
+
+  <!-- VS Code -->
+
+  <rect x="769" y="737" width="135" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/visualstudiocode/C9B8E8"
+    x="819" y="748"
+    width="34" height="34"/>
+
+  <text x="836" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    VS Code
+  </text>
+
+
+  <!-- Figma -->
+
+  <rect x="918" y="737" width="105" height="76" rx="15"
+    fill="#C9B8E8" fill-opacity="0.07"
+    stroke="#C9B8E8" stroke-opacity="0.16"/>
+
+  <image
+    href="https://cdn.simpleicons.org/figma/C9B8E8"
+    x="953" y="748"
+    width="34" height="34"/>
+
+  <text x="970" y="801"
+    text-anchor="middle"
+    fill="#D7C9ED"
+    font-family="Quicksand, sans-serif"
+    font-size="12"
+    font-weight="600">
+    Figma
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTTOM DETAIL -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="430"
+    y1="865"
+    x2="770"
+    y2="865"
+    stroke="#C9B8E8"
+    stroke-opacity="0.10"
+  />
+
+  <circle
+    cx="600"
+    cy="865"
+    r="3"
+    fill="#A9C5A5"
+    fill-opacity="0.65"
+  />
+
+</svg>
