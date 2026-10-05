@@ -285,7 +285,7 @@
         height="58"
         rx="16"
         fill="url(#card)"
-        stroke="#A9C5A5"
+        stroke="#C9B8E8"
         stroke-opacity="0.16"
     />
 
@@ -296,9 +296,9 @@
         width="25"
         height="20"
         rx="4"
-        fill="#A9C5A5"
+        fill="#C9B8E8"
         fill-opacity="0.10"
-        stroke="#A9C5A5"
+        stroke="#C9B8E8"
         stroke-opacity="0.35"
     />
 
@@ -307,7 +307,7 @@
       d="M620.5 176
       L631.5 185
       L642.5 176"
-      stroke="#A9C5A5"
+      stroke="#C9B8E8"
       stroke-width="1.6"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -341,7 +341,7 @@
         height="58"
         rx="16"
         fill="url(#card)"
-        stroke="#A9C5A5"
+        stroke="#C9B8E8"
         stroke-opacity="0.16"
         />
 
@@ -350,9 +350,9 @@
         cx="841"
         cy="184"
         r="12"
-        fill="#A9C5A5"
+        fill="#C9B8E8"
         fill-opacity="0.10"
-        stroke="#A9C5A5"
+        stroke="#C9B8E8"
         stroke-opacity="0.35"
         stroke-width="1.5"
         />
@@ -376,7 +376,7 @@
         H841.9
         V181.6
         C841.9 180.4 842.3 179.5 843.5 179.5Z"
-        fill="#A9C5A5"
+        fill="#C9B8E8"
         />
 
         <!-- Facebook label -->
@@ -392,8 +392,7 @@
     </a>
 
     <!-- ========================================================= -->
-    <!-- BOTTOM DECORATIVE LINE -->
-    <!-- Same 32px gap as the other section -->
+    <!-- BOTTOM DETAIL -->
     <!-- ========================================================= -->
 
     <line
