@@ -21,3 +21,11 @@
     width="100%"
   />
 </p>
+
+<p align="center">
+  <img
+    src="./.github/assets/socials.svg"
+    alt="Connect with Mahmuda Jahan on LinkedIn, GitHub, Email and Portfolio"
+    width="100%"
+  />
+</p>

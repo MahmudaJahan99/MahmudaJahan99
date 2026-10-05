@@ -1,0 +1,417 @@
+<svg width="1200" height="290" viewBox="0 0 1200 290"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap");
+  </style>
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="background"
+        x1="0" y1="0"
+        x2="1200" y2="290"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#100E14"/>
+        <stop offset="1" stop-color="#15111C"/>
+    </linearGradient>
+
+    <!-- Lavender glow -->
+    <radialGradient id="lavenderGlow"
+        cx="0" cy="0" r="1"
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(300 70) rotate(20) scale(300 150)">
+        <stop stop-color="#B69ADE" stop-opacity="0.18"/>
+        <stop offset="1" stop-color="#B69ADE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sage glow -->
+    <radialGradient id="sageGlow"
+        cx="0" cy="0" r="1"
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(930 200) rotate(-20) scale(300 150)">
+        <stop stop-color="#A9C5A5" stop-opacity="0.15"/>
+        <stop offset="1" stop-color="#A9C5A5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass -->
+    <linearGradient id="glass"
+        x1="0" y1="0"
+        x2="0" y2="290"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFFFFF" stop-opacity="0.045"/>
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
+    </linearGradient>
+
+    <!-- Card -->
+    <linearGradient id="card"
+        x1="0" y1="0"
+        x2="0" y2="58"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFFFFF" stop-opacity="0.04"/>
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
+    </linearGradient>
+
+    <!-- Blur -->
+    <filter id="blur">
+        <feGaussianBlur stdDeviation="25"/>
+    </filter>
+
+    <!-- Shadow -->
+    <filter id="shadow"
+        x="-20%" y="-20%"
+        width="140%" height="140%">
+        <feDropShadow
+        dx="0"
+        dy="8"
+        stdDeviation="18"
+        flood-color="#000000"
+        flood-opacity="0.30"/>
+    </filter>
+
+  </defs>
+
+
+  <!-- ========================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================================= -->
+
+  <rect
+    width="1200"
+    height="290"
+    rx="28"
+    fill="url(#background)"
+  />
+
+
+  <!-- Ambient glows -->
+  <ellipse
+    cx="160"
+    cy="120"
+    rx="300"
+    ry="210"
+    fill="url(#lavenderGlow)"
+    filter="url(#blur)"
+  />
+  <ellipse
+    cx="1040"
+    cy="200"
+    rx="310"
+    ry="220"
+    fill="url(#sageGlow)"
+    filter="url(#blur)"
+  />
+
+
+  <!-- ========================================================= -->
+  <!-- MAIN GLASS PANEL -->
+  <!-- ========================================================= -->
+
+  <rect
+    x="24"
+    y="24"
+    width="1152"
+    height="242"
+    rx="24"
+    fill="url(#glass)"
+    stroke="#C9B8E8"
+    stroke-opacity="0.13"
+  />
+
+
+  <!-- ========================================================= -->
+  <!-- SECTION HEADER -->
+  <!-- ========================================================= -->
+
+  <text
+    x="600"
+    y="82"
+    text-anchor="middle"
+    fill="#A9C5A5"
+    font-family="Quicksand, sans-serif"
+    font-size="14"
+    font-weight="600"
+    letter-spacing="4">
+    ✦ LET'S CONNECT
+  </text>
+
+  <text
+    x="600"
+    y="118"
+    text-anchor="middle"
+    fill="#F5F1F7"
+    font-family="Quicksand, sans-serif"
+    font-size="21"
+    font-weight="500">
+    Find me around the web
+  </text>
+
+
+    <!-- ========================================================= -->
+    <!-- LINK CARD — LINKEDIN -->
+    <!-- ========================================================= -->
+
+  <a href="https://www.linkedin.com/in/mahmuda-jahan-6bb639224/"
+    target="_blank">
+
+    <rect
+        x="180"
+        y="155"
+        width="190"
+        height="58"
+        rx="16"
+        fill="url(#card)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.16"
+    />
+
+    <!-- LinkedIn icon -->
+    <rect
+        x="198"
+        y="172"
+        width="25"
+        height="25"
+        rx="5"
+        fill="#C9B8E8"
+        fill-opacity="0.12"
+    />
+    <text
+        x="210.5"
+        y="190"
+        text-anchor="middle"
+        fill="#C9B8E8"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        font-weight="700">
+        in
+    </text>
+
+    <!-- LinkedIn label -->
+    <text
+        x="240"
+        y="191"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        LinkedIn
+    </text>
+
+  </a>
+
+
+    <!-- ========================================================= -->
+    <!-- LINK CARD — GITHUB -->
+    <!-- ========================================================= -->
+
+  <a href="https://github.com/MahmudaJahan99"
+    target="_blank">
+
+    <rect
+        x="390"
+        y="155"
+        width="190"
+        height="58"
+        rx="16"
+        fill="url(#card)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.16"
+    />
+
+    <!-- GitHub icon -->
+    <circle
+        cx="421"
+        cy="184"
+        r="13"
+        fill="#C9B8E8"
+        fill-opacity="0.12"
+    />
+
+    <!-- GitHub mark -->
+    <path
+        d="M421 173.5
+        C413.8 173.5 408 179.2 408 186.2
+        C408 191.9 411.7 196.6 416.8 198.3
+        C417.4 198.4 417.6 198.1 417.6 197.7
+        V195.2
+        C414.1 195.9 413.4 193.7 413.4 193.7
+        C412.8 192.2 412 191.8 412 191.8
+        C410.8 191 412.1 191 412.1 191
+        C413.4 191.1 414.1 192.4 414.1 192.4
+        C415.3 194.4 417.1 193.8 417.7 193.4
+        C417.8 192.6 418.2 192 418.6 191.7
+        C415.8 191.4 412.9 190.3 412.9 185.7
+        C412.9 184.4 413.4 183.3 414.2 182.5
+        C414.1 182.2 413.7 181 414.3 179.4
+        C414.3 179.4 415.3 179.1 417.6 180.6
+        C418.5 180.4 419.6 180.3 420.7 180.3
+        C421.8 180.3 422.9 180.4 423.8 180.6
+        C426.1 179.1 427.1 179.4 427.1 179.4
+        C427.7 181 427.3 182.2 427.2 182.5
+        C428 183.3 428.5 184.4 428.5 185.7
+        C428.5 190.3 425.6 191.4 422.8 191.7
+        C423.3 192.1 423.8 193 423.8 194.4
+        V197.7
+        C423.8 198.1 424 198.4 424.6 198.3
+        C429.7 196.6 433.4 191.9 433.4 186.2
+        C433.4 179.2 427.6 173.5 421 173.5Z"
+        fill="#C9B8E8"
+    />
+
+    <!-- GitHub label -->
+    <text
+        x="448"
+        y="191"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        GitHub
+    </text>
+
+  </a>
+
+
+    <!-- ========================================================= -->
+    <!-- LINK CARD — EMAIL -->
+    <!-- ========================================================= -->
+
+  <a href="mailto:mj.mjahan045@gmail.com">
+
+    <rect
+        x="600"
+        y="155"
+        width="190"
+        height="58"
+        rx="16"
+        fill="url(#card)"
+        stroke="#A9C5A5"
+        stroke-opacity="0.16"
+    />
+
+    <!-- Mail icon -->
+    <rect
+        x="619"
+        y="174"
+        width="25"
+        height="20"
+        rx="4"
+        fill="#A9C5A5"
+        fill-opacity="0.10"
+        stroke="#A9C5A5"
+        stroke-opacity="0.35"
+    />
+
+    <!-- Mail mark -->
+    <path
+      d="M620.5 176
+      L631.5 185
+      L642.5 176"
+      stroke="#A9C5A5"
+      stroke-width="1.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Mail label -->
+    <text
+        x="660"
+        y="191"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        Email
+    </text>
+
+  </a>
+
+
+    <!-- ========================================================= -->
+    <!-- LINK CARD — FACEBOOK -->
+    <!-- ========================================================= -->
+
+    <a href="https://www.facebook.com/MahmudaJahan99/"
+     target="_blank">
+
+        <rect
+        x="810"
+        y="155"
+        width="190"
+        height="58"
+        rx="16"
+        fill="url(#card)"
+        stroke="#A9C5A5"
+        stroke-opacity="0.16"
+        />
+
+        <!-- Facebook icon -->
+        <circle
+        cx="841"
+        cy="184"
+        r="12"
+        fill="#A9C5A5"
+        fill-opacity="0.10"
+        stroke="#A9C5A5"
+        stroke-opacity="0.35"
+        stroke-width="1.5"
+        />
+
+        <!-- Facebook mark -->
+        <path
+        d="M843.5 179.5
+        H846
+        V175.5
+        C845.2 175.4 844.3 175.3 843.3 175.3
+        C839.9 175.3 837.7 177.4 837.7 181.2
+        V184
+        H834.5
+        V188.2
+        H837.7
+        V196
+        H841.9
+        V188.2
+        H845.3
+        L845.8 184
+        H841.9
+        V181.6
+        C841.9 180.4 842.3 179.5 843.5 179.5Z"
+        fill="#A9C5A5"
+        />
+
+        <!-- Facebook label -->
+        <text
+        x="864"
+        y="191"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        Facebook
+        </text>
+    </a>
+
+    <!-- ========================================================= -->
+    <!-- BOTTOM DECORATIVE LINE -->
+    <!-- Same 32px gap as the other section -->
+    <!-- ========================================================= -->
+
+    <line
+        x1="430"
+        y1="240"
+        x2="770"
+        y2="240"
+        stroke="#C9B8E8"
+        stroke-opacity="0.20"
+        stroke-width="1"
+    />
+
+    <circle
+        cx="600"
+        cy="240"
+        r="3"
+        fill="#C9B8E8"
+        fill-opacity="0.55"
+    />
+
+</svg>
