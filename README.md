@@ -57,10 +57,10 @@
     />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="YOUR_PORTFOLIO_URL" target="_blank">
-    <img
-      src="https://img.shields.io/badge/Portfolio-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=black"
-      alt="Portfolio"
+  <a href="https://www.instagram.com/mj_without_spiderman/" target="_blank">
+    <img 
+      src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+      alt="Instagram"
     />
-  </a>
+  </a> 
 </p>
