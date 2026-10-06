@@ -15,17 +15,16 @@
 </p>
 
 <p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=MahmudaJahan99&show_icons=true&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&icon_color=8b5cf6&bg_color=00000000&ring_color=00e5ff"
+    alt="Mahmuda Jahan GitHub Statistics" 
+  />
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=MahmudaJahan99&layout=compact&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&bg_color=00000000"
+    alt="Mahmuda Jahan Top Languages" 
+  /> </p>
 
-![](https://github-readme-stats.vercel.app/api?username=MahmudaJahan99&show_icons=true&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&icon_color=8b5cf6&bg_color=00000000&ring_color=00e5ff)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=MahmudaJahan99&layout=compact&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&bg_color=00000000)
-
-</p>
-
-<p align="center">
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=MahmudaJahan99&theme=transparent&hide_border=true&ring=00e5ff&fire=8b5cf6&currStreakLabel=00e5ff&sideLabels=8b9dc3&currStreakNum=ffffff&sideNums=ffffff&dates=555555&stroke=1a1a2e)
-
-</p>
+<p align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=MahmudaJahan99&theme=transparent&hide_border=true&ring=00e5ff&fire=8b5cf6&currStreakLabel=00e5ff&sideLabels=8b9dc3&currStreakNum=ffffff&sideNums=ffffff&dates=555555&stroke=1a1a2e" alt="Mahmuda Jahan GitHub Contribution Streak" /> </p>
 
 <p align="center">
   <img
