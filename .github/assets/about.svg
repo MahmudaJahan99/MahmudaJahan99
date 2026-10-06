@@ -1,546 +1,1343 @@
-<svg width="1200" height="700" viewBox="0 0 1200 700"
-     fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="1520" viewBox="0 0 1200 1520"
+    fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap");
+
+        .firefly {
+            transform-box: fill-box;
+            transform-origin: center;
+        }
+
+        .firefly-1 {
+            animation: fireflyOne 14s ease-in-out infinite;
+        }
+
+        .firefly-2 {
+            animation: fireflyTwo 18s ease-in-out infinite;
+        }
+
+        .firefly-3 {
+            animation: fireflyThree 16s ease-in-out infinite;
+        }
+
+        .firefly-4 {
+        animation: fireflyFour 20s ease-in-out infinite;
+        }
+
+        @keyframes fireflyOne {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(260px, 180px) scale(0.88);
+            }
+
+            50% {
+                transform: translate(520px, 20px) scale(1.08);
+            }
+
+            75% {
+                transform: translate(280px, 400px) scale(0.94);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        @keyframes fireflyTwo {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(-280px, -120px) scale(1.08);
+            }
+
+            50% {
+                transform: translate(-520px, 100px) scale(0.9);
+            }
+
+            75% {
+                transform: translate(-180px, 260px) scale(1.04);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        @keyframes fireflyThree {
+            0% {
+                transform: translate(0, 0) scale(0.9);
+            }
+
+            25% {
+                transform: translate(-220px, -180px) scale(1.05);
+            }
+
+            50% {
+                transform: translate(260px, -250px) scale(0.85);
+            }
+
+            75% {
+                transform: translate(300px, 120px) scale(1.08);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(0.9);
+            }
+        }
+
+        @keyframes fireflyFour {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(180px, -140px) scale(1.08);
+            }
+            50% {
+                transform: translate(420px, 100px) scale(0.92);
+            }
+            75% {
+                transform: translate(120px, 280px) scale(1.05);
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
     </style>
 
-  <defs>
+    <defs>
 
-    <!-- Background -->
-    <linearGradient id="background"
-        x1="0" y1="0"
-        x2="1200" y2="700"
-        gradientUnits="userSpaceOnUse">
-        <stop stop-color="#100E14"/>
-        <stop offset="1" stop-color="#15111C"/>
-    </linearGradient>
+        <!-- Background -->
+        <linearGradient id="about-background"
+            x1="0" y1="0"
+            x2="1200" y2="1520"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#100E14" />
+            <stop offset="1" stop-color="#15111C" />
+        </linearGradient>
 
-    <!-- Lavender glow -->
-    <radialGradient id="lavenderGlow"
-        cx="0" cy="0" r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(180 90) rotate(25) scale(330 250)">
-        <stop stop-color="#B69ADE" stop-opacity="0.20"/>
-        <stop offset="1" stop-color="#B69ADE" stop-opacity="0"/>
-    </radialGradient>
+        <radialGradient
+            id="firefly-lavender"
+            cx="50%"
+            cy="50%"
+            r="50%"
+        >
+            <stop stop-color="#B69ADE" stop-opacity="0.22" />
+            <stop offset="0.45" stop-color="#B69ADE" stop-opacity="0.10" />
+            <stop offset="1" stop-color="#B69ADE" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient
+            id="firefly-sage"
+            cx="50%"
+            cy="50%"
+            r="50%"
+        >
+            <stop stop-color="#A9C5A5" stop-opacity="0.20" />
+            <stop offset="0.45" stop-color="#A9C5A5" stop-opacity="0.09" />
+            <stop offset="1" stop-color="#A9C5A5" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient
+            id="firefly-soft"
+            cx="50%"
+            cy="50%"
+            r="50%"
+        >
+            <stop stop-color="#D7C9ED" stop-opacity="0.16" />
+            <stop offset="0.45" stop-color="#D7C9ED" stop-opacity="0.07" />
+            <stop offset="1" stop-color="#D7C9ED" stop-opacity="0" />
+        </radialGradient>
 
-    <!-- Sage glow -->
-    <radialGradient id="sageGlow"
-        cx="0" cy="0" r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(1030 610) rotate(-25) scale(350 260)">
-        <stop stop-color="#A9C5A5" stop-opacity="0.17"/>
-        <stop offset="1" stop-color="#A9C5A5" stop-opacity="0"/>
-    </radialGradient>
+        <!-- Glass -->
+        <linearGradient id="about-glass"
+            x1="0" y1="0"
+            x2="0" y2="1520"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF" stop-opacity="0.045" />
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012" />
+        </linearGradient>
 
-    <!-- Glass -->
-    <linearGradient id="glass"
-        x1="0" y1="0"
-        x2="0" y2="700"
-        gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFFFFF" stop-opacity="0.045"/>
-        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
-    </linearGradient>
+        <!-- Card glass -->
+        <linearGradient id="about-cardGlass"
+            x1="0" y1="0"
+            x2="0" y2="300"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF" stop-opacity="0.038" />
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012" />
+        </linearGradient>
 
-    <!-- Card glass -->
-    <linearGradient id="cardGlass"
-        x1="0" y1="0"
-        x2="0" y2="300"
-        gradientUnits="userSpaceOnUse">
-        <stop stop-color="#FFFFFF" stop-opacity="0.038"/>
-        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012"/>
-    </linearGradient>
+        <!-- Shadow -->
+        <filter id="shadow"
+            x="-20%" y="-20%"
+            width="140%" height="150%">
+            <feDropShadow
+                dx="0"
+                dy="10"
+                stdDeviation="22"
+                flood-color="#000000"
+                flood-opacity="0.30" />
+        </filter>
 
-    <!-- Blur -->
-    <filter id="blur">
-        <feGaussianBlur stdDeviation="28"/>
-    </filter>
+        <!-- Firefly Blur -->
+        <filter id="firefly-blur">
+            <feGaussianBlur stdDeviation="18" />
+        </filter>
 
-    <!-- Shadow -->
-    <filter id="shadow"
-        x="-20%" y="-20%"
-        width="140%" height="140%">
-        <feDropShadow
-        dx="0"
-        dy="12"
-        stdDeviation="24"
-        flood-color="#000000"
-        flood-opacity="0.32"/>
-    </filter>
-
-  </defs>
-
-
-  <!-- ========================================================= -->
-  <!-- BACKGROUND -->
-  <!-- ========================================================= -->
-
-  <rect
-    width="1200"
-    height="700"
-    rx="28"
-    fill="url(#background)"
-  />
-
-  <!-- Ambient glows -->
-  <ellipse
-    cx="180"
-    cy="90"
-    rx="270"
-    ry="190"
-    fill="url(#lavenderGlow)"
-    filter="url(#blur)"
-  />
-  <ellipse
-    cx="1030"
-    cy="610"
-    rx="280"
-    ry="200"
-    fill="url(#sageGlow)"
-    filter="url(#blur)"
-  />
+    </defs>
 
 
-<!-- ========================================================= -->
-<!-- MAIN GLASS PANEL -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================================= -->
 
-<rect
-  x="24"
-  y="24"
-  width="1152"
-  height="652"
-  rx="24"
-  fill="url(#glass)"
-  stroke="#C9B8E8"
-  stroke-opacity="0.13"
-/>
+    <rect
+        width="1200"
+        height="1520"
+        rx="28"
+        fill="url(#about-background)"
+    />
+
+    <circle
+        class="firefly firefly-1"
+        cx="180"
+        cy="130"
+        r="150"
+        fill="url(#firefly-lavender)"
+        filter="url(#firefly-blur)"
+    />
+    <circle
+        class="firefly firefly-2"
+        cx="1000"
+        cy="600"
+        r="130"
+        fill="url(#firefly-sage)"
+        filter="url(#firefly-blur)"
+    />
+    <circle
+        class="firefly firefly-3"
+        cx="600"
+        cy="820"
+        r="110"
+        fill="url(#firefly-soft)"
+        filter="url(#firefly-blur)"
+    />
+    <circle
+        class="firefly firefly-4"
+        cx="300"
+        cy="1250"
+        r="120"
+        fill="url(#firefly-lavender)"
+        filter="url(#firefly-blur)"
+    />
 
 
-<!-- ========================================================= -->
-<!-- SECTION HEADER -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- MAIN GLASS PANEL -->
+    <!-- ========================================================= -->
 
-<text
-  x="600"
-  y="82"
-  text-anchor="middle"
-  fill="#A9C5A5"
-  font-family="Quicksand, sans-serif"
-  font-size="14"
-  font-weight="600"
-  letter-spacing="4">
-  ✦ ABOUT ME
-</text>
-
-<text
-  x="600"
-  y="118"
-  text-anchor="middle"
-  fill="#F5F1F7"
-  font-family="Quicksand, sans-serif"
-  font-size="21"
-  font-weight="500">
-  A little about the person behind the interfaces
-</text>
+    <rect
+        x="24"
+        y="24"
+        width="1152"
+        height="652"
+        rx="24"
+        fill="url(#about-glass)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.13"
+    />
 
 
-<!-- ========================================================= -->
-<!-- CARD 1 — WHO I AM -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- SECTION HEADER -->
+    <!-- ========================================================= -->
 
-<path
-  d="M60 155
+    <text
+        x="600"
+        y="82"
+        text-anchor="middle"
+        fill="#A9C5A5"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600"
+        letter-spacing="4">
+        ✦ ABOUT ME
+    </text>
+
+    <text
+        x="600"
+        y="118"
+        text-anchor="middle"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="21"
+        font-weight="500">
+        A little about the person behind the interfaces
+    </text>
+
+
+    <!-- ========================================================= -->
+    <!-- CARD 1 — WHO I AM -->
+    <!-- ========================================================= -->
+
+    <path
+        d="M60 155
      H565
      A20 20 0 0 1 585 175
      V350
      A20 20 0 0 1 565 370
      H60
      Z"
-  fill="url(#cardGlass)"
-  stroke="#C9B8E8"
-  stroke-opacity="0.14"
-  filter="url(#shadow)"
-/>
+        fill="url(#about-cardGlass)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.14"
+        filter="url(#shadow)"
+    />
 
-<!-- Accent line -->
-<rect
-  x="60"
-  y="155"
-  width="5"
-  height="215"
-  fill="#C9B8E8"
-  fill-opacity="0.65"
-/>
+    <!-- Accent line -->
+    <rect
+        x="60"
+        y="155"
+        width="5"
+        height="215"
+        fill="#C9B8E8"
+        fill-opacity="0.65"
+    />
 
-<!-- Icon -->
-<circle
-  cx="98"
-  cy="195"
-  r="16"
-  fill="#C9B8E8"
-  fill-opacity="0.08"
-  stroke="#C9B8E8"
-  stroke-opacity="0.25"
-/>
+    <!-- Icon -->
+    <circle
+        cx="98"
+        cy="195"
+        r="16"
+        fill="#C9B8E8"
+        fill-opacity="0.08"
+        stroke="#C9B8E8"
+        stroke-opacity="0.25"
+    />
 
-<text
-  x="98"
-  y="201"
-  text-anchor="middle"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="14"
-  font-weight="600">
-  01
-</text>
+    <text
+        x="98"
+        y="201"
+        text-anchor="middle"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        01
+    </text>
 
-<!-- Title -->
-<text
-  x="130"
-  y="201"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="17"
-  font-weight="600"
-  letter-spacing="1">
-  WHO I AM
-</text>
+    <!-- Title -->
+    <text
+        x="130"
+        y="201"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="17"
+        font-weight="600"
+        letter-spacing="1">
+        WHO I AM
+    </text>
 
-<!-- Body -->
-<text
-  x="92"
-  y="245"
-  fill="#F5F1F7"
-  font-family="Quicksand, sans-serif"
-  font-size="15"
-  font-weight="400">
+    <!-- Body -->
+    <text
+        x="92"
+        y="245"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="15"
+        font-weight="400">
 
-  <tspan x="92" dy="0">
-    I'm Mahmuda Jahan, a Front-End Developer
-  </tspan>
+        <tspan x="92" dy="0">
+            I'm Mahmuda Jahan, a Front-End Developer
+        </tspan>
 
-  <tspan x="92" dy="25">
-    who enjoys turning ideas and designs into
-  </tspan>
+        <tspan x="92" dy="25">
+            who enjoys turning ideas and designs into
+        </tspan>
 
-  <tspan x="92" dy="25">
-    thoughtful, responsive web experiences.
-  </tspan>
+        <tspan x="92" dy="25">
+            thoughtful, responsive web experiences.
+        </tspan>
 
-  <tspan x="92" dy="25">
-    I care about clean architecture, accessibility,
-  </tspan>
+        <tspan x="92" dy="25">
+            I care about clean architecture, accessibility,
+        </tspan>
 
-  <tspan x="92" dy="25">
-    and interfaces that feel as good as they function.
-  </tspan>
+        <tspan x="92" dy="25">
+            and interfaces that feel as good as they function.
+        </tspan>
 
-</text>
+    </text>
 
 
-<!-- ========================================================= -->
-<!-- CARD 2 — WHAT I DO -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- CARD 2 — WHAT I DO -->
+    <!-- ========================================================= -->
 
-<path
-  d="M615 155
+    <path
+        d="M615 155
      H1120
      A20 20 0 0 1 1140 175
      V350
      A20 20 0 0 1 1120 370
      H615
      Z"
-  fill="url(#cardGlass)"
-  stroke="#C9B8E8"
-  stroke-opacity="0.14"
-  filter="url(#shadow)"
-/>
+        fill="url(#about-cardGlass)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.14"
+        filter="url(#shadow)"
+    />
 
-<!-- Accent line -->
-<rect
-  x="615"
-  y="155"
-  width="5"
-  height="215"
-  fill="#C9B8E8"
-  fill-opacity="0.65"
-/>
+    <!-- Accent line -->
+    <rect
+        x="615"
+        y="155"
+        width="5"
+        height="215"
+        fill="#C9B8E8"
+        fill-opacity="0.65"
+    />
 
-<!-- Icon -->
-<circle
-  cx="653"
-  cy="195"
-  r="16"
-  fill="#C9B8E8"
-  fill-opacity="0.08"
-  stroke="#C9B8E8"
-  stroke-opacity="0.25"
-/>
+    <!-- Icon -->
+    <circle
+        cx="653"
+        cy="195"
+        r="16"
+        fill="#C9B8E8"
+        fill-opacity="0.08"
+        stroke="#C9B8E8"
+        stroke-opacity="0.25"
+    />
 
-<text
-  x="653"
-  y="201"
-  text-anchor="middle"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="14"
-  font-weight="600">
-  02
-</text>
+    <text
+        x="653"
+        y="201"
+        text-anchor="middle"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        02
+    </text>
 
-<!-- Title -->
-<text
-  x="685"
-  y="201"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="17"
-  font-weight="600"
-  letter-spacing="1">
-  WHAT I DO
-</text>
+    <!-- Title -->
+    <text
+        x="685"
+        y="201"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="17"
+        font-weight="600"
+        letter-spacing="1">
+        WHAT I DO
+    </text>
 
-<!-- Body -->
-<text
-  x="647"
-  y="245"
-  fill="#F5F1F7"
-  font-family="Quicksand, sans-serif"
-  font-size="15"
-  font-weight="400">
+    <!-- Body -->
+    <text
+        x="647"
+        y="245"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="15"
+        font-weight="400">
 
-  <tspan x="647" dy="0">
-    I build component-driven interfaces that
-  </tspan>
+        <tspan x="647" dy="0">
+            I build component-driven interfaces that
+        </tspan>
 
-  <tspan x="647" dy="25">
-    are responsive, maintainable, and user-focused.
-  </tspan>
+        <tspan x="647" dy="25">
+            are responsive, maintainable, and user-focused.
+        </tspan>
 
-  <tspan x="647" dy="25">
-    I translate Figma designs into polished React
-  </tspan>
+        <tspan x="647" dy="25">
+            I translate Figma designs into polished React
+        </tspan>
 
-  <tspan x="647" dy="25">
-    applications, integrate APIs, manage state,
-  </tspan>
+        <tspan x="647" dy="25">
+            applications, integrate APIs, manage state,
+        </tspan>
 
-  <tspan x="647" dy="25">
-    and create reusable UI systems.
-  </tspan>
+        <tspan x="647" dy="25">
+            and create reusable UI systems.
+        </tspan>
 
-</text>
+    </text>
 
 
-<!-- ========================================================= -->
-<!-- CARD 3 — VISION -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- CARD 3 — VISION -->
+    <!-- ========================================================= -->
 
-<path
-  d="M60 395
+    <path
+        d="M60 395
      H565
      A20 20 0 0 1 585 415
      V590
      A20 20 0 0 1 565 610
      H60
      Z"
-  fill="url(#cardGlass)"
-  stroke="#C9B8E8"
-  stroke-opacity="0.14"
-  filter="url(#shadow)"
-/>
+        fill="url(#about-cardGlass)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.14"
+        filter="url(#shadow)"
+    />
 
-<!-- Accent line -->
-<rect
-  x="60"
-  y="395"
-  width="5"
-  height="215"
-  fill="#C9B8E8"
-  fill-opacity="0.65"
-/>
+    <!-- Accent line -->
+    <rect
+        x="60"
+        y="395"
+        width="5"
+        height="215"
+        fill="#C9B8E8"
+        fill-opacity="0.65"
+    />
 
-<!-- Icon -->
-<circle
-  cx="98"
-  cy="435"
-  r="16"
-  fill="#C9B8E8"
-  fill-opacity="0.08"
-  stroke="#C9B8E8"
-  stroke-opacity="0.25"
-/>
+    <!-- Icon -->
+    <circle
+        cx="98"
+        cy="435"
+        r="16"
+        fill="#C9B8E8"
+        fill-opacity="0.08"
+        stroke="#C9B8E8"
+        stroke-opacity="0.25"
+    />
 
-<text
-  x="98"
-  y="441"
-  text-anchor="middle"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="14"
-  font-weight="600">
-  03
-</text>
+    <text
+        x="98"
+        y="441"
+        text-anchor="middle"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        03
+    </text>
 
-<!-- Title -->
-<text
-  x="130"
-  y="441"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="17"
-  font-weight="600"
-  letter-spacing="1">
-  VISION
-</text>
+    <!-- Title -->
+    <text
+        x="130"
+        y="441"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="17"
+        font-weight="600"
+        letter-spacing="1">
+        VISION
+    </text>
 
-<!-- Body -->
-<text
-  x="92"
-  y="485"
-  fill="#F5F1F7"
-  font-family="Quicksand, sans-serif"
-  font-size="15"
-  font-weight="400">
+    <!-- Body -->
+    <text
+        x="92"
+        y="485"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="15"
+        font-weight="400">
 
-  <tspan x="92" dy="0">
-    I want to grow beyond simply writing
-  </tspan>
+        <tspan x="92" dy="0">
+            I want to grow beyond simply writing
+        </tspan>
 
-  <tspan x="92" dy="25">
-    interfaces into becoming a well-rounded
-  </tspan>
+        <tspan x="92" dy="25">
+            interfaces into becoming a well-rounded
+        </tspan>
 
-  <tspan x="92" dy="25">
-    Product Engineer - connecting design,
-  </tspan>
+        <tspan x="92" dy="25">
+            Product Engineer - connecting design,
+        </tspan>
 
-  <tspan x="92" dy="25">
-    frontend architecture, backend systems,
-  </tspan>
+        <tspan x="92" dy="25">
+            frontend architecture, backend systems,
+        </tspan>
 
-  <tspan x="92" dy="25">
-    accessibility, and the people using them.
-  </tspan>
+        <tspan x="92" dy="25">
+            accessibility, and the people using them.
+        </tspan>
 
-</text>
+    </text>
 
 
-<!-- ========================================================= -->
-<!-- CARD 4 — BEYOND CODE -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- CARD 4 — BEYOND CODE -->
+    <!-- ========================================================= -->
 
-<path
-  d="M615 395
+    <path
+        d="M615 395
      H1120
      A20 20 0 0 1 1140 415
      V590
      A20 20 0 0 1 1120 610
      H615
      Z"
-  fill="url(#cardGlass)"
-  stroke="#C9B8E8"
-  stroke-opacity="0.14"
-  filter="url(#shadow)"
-/>
+        fill="url(#about-cardGlass)"
+        stroke="#C9B8E8"
+        stroke-opacity="0.14"
+        filter="url(#shadow)"
+    />
 
-<!-- Accent line -->
-<rect
-  x="615"
-  y="395"
-  width="5"
-  height="215"
-  fill="#C9B8E8"
-  fill-opacity="0.65"
-/>
+    <!-- Accent line -->
+    <rect
+        x="615"
+        y="395"
+        width="5"
+        height="215"
+        fill="#C9B8E8"
+        fill-opacity="0.65"
+    />
 
-<!-- Icon -->
-<circle
-  cx="653"
-  cy="435"
-  r="16"
-  fill="#C9B8E8"
-  fill-opacity="0.08"
-  stroke="#C9B8E8"
-  stroke-opacity="0.25"
-/>
+    <!-- Icon -->
+    <circle
+        cx="653"
+        cy="435"
+        r="16"
+        fill="#C9B8E8"
+        fill-opacity="0.08"
+        stroke="#C9B8E8"
+        stroke-opacity="0.25"
+    />
 
-<text
-  x="653"
-  y="441"
-  text-anchor="middle"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="14"
-  font-weight="600">
-  04
-</text>
+    <text
+        x="653"
+        y="441"
+        text-anchor="middle"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="14"
+        font-weight="600">
+        04
+    </text>
 
-<!-- Title -->
-<text
-  x="685"
-  y="441"
-  fill="#C9B8E8"
-  font-family="Quicksand, sans-serif"
-  font-size="17"
-  font-weight="600"
-  letter-spacing="1">
-  BEYOND CODE
-</text>
+    <!-- Title -->
+    <text
+        x="685"
+        y="441"
+        fill="#C9B8E8"
+        font-family="Quicksand, sans-serif"
+        font-size="17"
+        font-weight="600"
+        letter-spacing="1">
+        BEYOND CODE
+    </text>
 
-<!-- Body -->
-<text
-  x="647"
-  y="485"
-  fill="#F5F1F7"
-  font-family="Quicksand, sans-serif"
-  font-size="15"
-  font-weight="400">
+    <!-- Body -->
+    <text
+        x="647"
+        y="485"
+        fill="#F5F1F7"
+        font-family="Quicksand, sans-serif"
+        font-size="15"
+        font-weight="400">
 
-  <tspan x="647" dy="0">
-    Outside of development, I find inspiration
-  </tspan>
+        <tspan x="647" dy="0">
+            Outside of development, I find inspiration
+        </tspan>
 
-  <tspan x="647" dy="25">
-    in painting, gardening, and exploring new
-  </tspan>
+        <tspan x="647" dy="25">
+            in painting, gardening, and exploring new
+        </tspan>
 
-  <tspan x="647" dy="25">
-    places. I enjoy learning languages and
-  </tspan>
+        <tspan x="647" dy="25">
+            places. I enjoy learning languages and
+        </tspan>
 
-  <tspan x="647" dy="25">
-    experimenting with creative ideas — often
-  </tspan>
+        <tspan x="647" dy="25">
+            experimenting with creative ideas — often
+        </tspan>
 
-  <tspan x="647" dy="25">
-    bringing that curiosity into what I build.
-  </tspan>
+        <tspan x="647" dy="25">
+            bringing that curiosity into what I build.
+        </tspan>
 
-</text>
+    </text>
 
 
-<!-- ========================================================= -->
-<!-- BOTTOM DECORATIVE LINE -->
-<!-- ========================================================= -->
+    <!-- ========================================================= -->
+    <!-- BOTTOM DECORATIVE LINE -->
+    <!-- ========================================================= -->
 
-<line
-  x1="430"
-  y1="642"
-  x2="770"
-  y2="642"
-  stroke="#C9B8E8"
-  stroke-opacity="0.12"
-/>
+    <line
+        x1="430"
+        y1="642"
+        x2="770"
+        y2="642"
+        stroke="#C9B8E8"
+        stroke-opacity="0.12"
+    />
 
-<circle
-  cx="600"
-  cy="642"
-  r="3"
-  fill="#A9C5A5"
-  fill-opacity="0.65"
-/>
+    <circle
+        cx="600"
+        cy="642"
+        r="3"
+        fill="#A9C5A5"
+        fill-opacity="0.65"
+    />
+
+    <g id="techs-section" transform="translate(0 700)">
+
+        <defs>
+            <!-- Glass -->
+            <linearGradient id="tech-glass"
+                x1="0" y1="0"
+                x2="0" y2="820"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF" stop-opacity="0.045" />
+                <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012" />
+            </linearGradient>
+
+            <!-- Card glass -->
+            <linearGradient id="tech-cardGlass"
+                x1="0" y1="0"
+                x2="0" y2="230"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF" stop-opacity="0.040" />
+                <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.012" />
+            </linearGradient>
+
+            <!-- Sage tile -->
+            <linearGradient
+                id="tech-sageTile"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="54"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A9C5A5" stop-opacity="0.13" />
+                <stop offset="1" stop-color="#A9C5A5" stop-opacity="0.045" />
+            </linearGradient>
+
+        </defs>
+
+        <!-- ========================================================= -->
+        <!-- MAIN GLASS PANEL -->
+        <!-- ========================================================= -->
+
+        <rect
+            x="24"
+            y="24"
+            width="1152"
+            height="769"
+            rx="24"
+            fill="url(#tech-glass)"
+            stroke="#C9B8E8"
+            stroke-opacity="0.13"
+        />
+
+
+        <!-- ========================================================= -->
+        <!-- SECTION HEADER -->
+        <!-- ========================================================= -->
+
+        <text
+            x="600"
+            y="82"
+            text-anchor="middle"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="14"
+            font-weight="600"
+            letter-spacing="4">
+            ✦ TECHNOLOGIES I WORK WITH
+        </text>
+
+        <text
+            x="600"
+            y="118"
+            text-anchor="middle"
+            fill="#F5F1F7"
+            font-family="Quicksand, sans-serif"
+            font-size="21"
+            font-weight="500">
+            Tools for turning ideas into products
+        </text>
+
+
+        <!-- ========================================================= -->
+        <!-- CARD 1 — FRONTEND -->
+        <!-- ========================================================= -->
+
+        <path
+            d="M60 155
+        H1118
+        A22 22 0 0 1 1140 177
+        V308
+        A22 22 0 0 1 1118 330
+        H60
+        Z"
+            fill="url(#tech-cardGlass)"
+            stroke="#C9B8E8"
+            stroke-opacity="0.16"
+            filter="url(#shadow)"
+        />
+
+        <rect
+            x="60"
+            y="155"
+            width="5"
+            height="175"
+            fill="#C9B8E8"
+            fill-opacity="0.75"
+        />
+
+        <!-- Header -->
+        <text
+            x="92"
+            y="201"
+            fill="#C9B8E8"
+            font-family="Quicksand, sans-serif"
+            font-size="19"
+            font-weight="600">
+            FRONTEND
+        </text>
+        <text
+            x="92"
+            y="226"
+            fill="#AAA2B4"
+            font-family="Quicksand, sans-serif"
+            font-size="13">
+            Building responsive, component-driven interfaces
+        </text>
+
+        <!-- React -->
+        <rect x="92" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(106 258)" fill="none" stroke="#A9C5A5" stroke-width="2">
+            <ellipse cx="15" cy="15" rx="14" ry="5.5" />
+            <ellipse cx="15" cy="15" rx="14" ry="5.5" transform="rotate(60 15 15)" />
+            <ellipse cx="15" cy="15" rx="14" ry="5.5" transform="rotate(120 15 15)" />
+            <circle cx="15" cy="15" r="2.8" fill="#A9C5A5" stroke="none" />
+        </g>
+        <text x="153" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="13"
+            font-weight="600">
+            React
+        </text>
+
+        <!-- Next -->
+        <rect x="233" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(247 258)">
+            <circle cx="15" cy="15" r="14" fill="none" stroke="#A9C5A5" stroke-width="2" />
+            <path d="M10 9V21" stroke="#A9C5A5" stroke-width="2" stroke-linecap="round" />
+            <path d="M10 9L20 25" stroke="#A9C5A5" stroke-width="2" stroke-linecap="round" />
+            <path d="M18 9V18" stroke="#A9C5A5" stroke-width="2" stroke-linecap="round" />
+        </g>
+        <text x="294" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Next.js
+        </text>
+
+        <!-- TypeScript -->
+        <rect x="374" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(388 258)">
+            <rect x="1" y="1" width="28" height="28" rx="3"
+                fill="#A9C5A5" fill-opacity="0.12"
+                stroke="#A9C5A5" stroke-width="1.5" />
+            <text x="15" y="21"
+                text-anchor="middle"
+                fill="#A9C5A5"
+                font-family="Arial, sans-serif"
+                font-size="13"
+                font-weight="700">TS</text>
+        </g>
+        <text x="435" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            TypeScript
+        </text>
+
+        <!-- Tailwind -->
+        <rect x="515" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(529 258)" fill="none"
+            stroke="#A9C5A5" stroke-width="2.2"
+            stroke-linecap="round">
+            <path d="M3 12C5 6 9 5 13 8C15 10 16 11 19 10C22 9 24 7 27 9" />
+            <path d="M3 20C5 14 9 13 13 16C15 18 16 19 19 18C22 17 24 15 27 17" />
+        </g>
+        <text x="576" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Tailwind
+        </text>
+
+        <!-- JavaScript -->
+        <rect x="656" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(670 258)">
+            <rect x="1" y="1" width="28" height="28" rx="3"
+                fill="#A9C5A5" fill-opacity="0.12"
+                stroke="#A9C5A5" stroke-width="1.5" />
+            <text x="15" y="21"
+                text-anchor="middle"
+                fill="#A9C5A5"
+                font-family="Arial, sans-serif"
+                font-size="12"
+                font-weight="700">JS</text>
+        </g>
+        <text x="717" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            JavaScript
+        </text>
+
+        <!-- Router -->
+        <rect x="797" y="248" width="150" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(811 258)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="8" cy="15" r="4" />
+            <circle cx="22" cy="8" r="4" />
+            <circle cx="22" cy="22" r="4" />
+            <path d="M11.5 13L18.5 10" />
+            <path d="M11.5 17L18.5 20" />
+        </g>
+        <text x="858" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            React Router
+        </text>
+
+        <!-- Zustand -->
+        <rect x="956" y="248" width="132" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(970 258)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M7 7C4 10 4 15 7 18" />
+            <path d="M23 7C26 10 26 15 23 18" />
+            <path d="M10 21C12 24 18 24 20 21" />
+            <circle cx="9" cy="7" r="2" fill="#A9C5A5" stroke="none" />
+            <circle cx="21" cy="7" r="2" fill="#A9C5A5" stroke="none" />
+        </g>
+        <text x="1017" y="280"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Zustand
+        </text>
+
+
+        <!-- ========================================================= -->
+        <!-- CARD 2 — BACKEND -->
+        <!-- ========================================================= -->
+
+        <path
+            d="M60 355
+        H1118
+        A22 22 0 0 1 1140 377
+        V508
+        A22 22 0 0 1 1118 530
+        H60
+        Z"
+            fill="url(#tech-cardGlass)"
+            stroke="#AAA2B4"
+            stroke-opacity="0.16"
+            filter="url(#shadow)"
+        />
+
+        <rect
+            x="60"
+            y="355"
+            width="5"
+            height="175"
+            fill="#AAA2B4"
+            fill-opacity="0.75"
+        />
+
+        <text
+            x="92"
+            y="401"
+            fill="#AAA2B4"
+            font-family="Quicksand, sans-serif"
+            font-size="19"
+            font-weight="600">
+            BACKEND &amp; DATA
+        </text>
+
+        <text
+            x="92"
+            y="426"
+            fill="#AAA2B4"
+            font-family="Quicksand, sans-serif"
+            font-size="13">
+            Connecting interfaces with data and services
+        </text>
+
+
+        <!-- Express -->
+        <rect x="92" y="448" width="145" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(106 459)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linecap="round">
+            <path d="M3 15H27" />
+            <path d="M7 10H23" />
+            <path d="M7 20H23" />
+            <circle cx="3" cy="15" r="2.5" fill="#A9C5A5" stroke="none" />
+            <circle cx="27" cy="15" r="2.5" fill="#A9C5A5" stroke="none" />
+        </g>
+        <text x="153" y="481"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Express.js
+        </text>
+
+        <!-- PostgreSQL -->
+        <rect x="251" y="448" width="150" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(265 459)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linejoin="round">
+            <path d="M15 3C9 3 6 7 7 13C7 19 10 25 15 25C20 25 23 19 23 13C24 7 21 3 15 3Z" />
+            <path d="M10 11C12 13 18 13 20 11" />
+            <path d="M12 17C13 19 17 19 18 17" />
+            <path d="M21 18C25 18 27 15 26 13" />
+        </g>
+        <text x="312" y="481"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            PostgreSQL
+        </text>
+
+        <!-- MongoDB -->
+        <rect x="415" y="448" width="140" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(429 459)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M15 3C11 8 9 11 9 16C9 21 11 24 15 27C19 24 21 21 21 16C21 11 19 8 15 3Z" />
+            <path d="M15 8V25" />
+        </g>
+        <text x="476" y="481"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            MongoDB
+        </text>
+
+        <!-- Prisma -->
+        <rect x="569" y="448" width="125" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(583 459)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="2"
+            stroke-linejoin="round">
+            <path d="M15 3L27 25L5 28L15 3Z" />
+            <path d="M15 3L12 22" />
+        </g>
+        <text x="630" y="481"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Prisma
+        </text>
+
+        <!-- REST API -->
+        <rect x="708" y="448" width="125" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(722 459)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M6 9H24" />
+            <path d="M6 15H24" />
+            <path d="M6 21H24" />
+            <circle cx="6" cy="9" r="2" fill="#A9C5A5" stroke="none" />
+            <circle cx="6" cy="15" r="2" fill="#A9C5A5" stroke="none" />
+            <circle cx="6" cy="21" r="2" fill="#A9C5A5" stroke="none" />
+        </g>
+        <text x="757" y="481"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            REST APIs
+        </text>
+
+
+        <!-- ========================================================= -->
+        <!-- CARD 3 — TOOLS -->
+        <!-- ========================================================= -->
+
+        <path
+            d="M60 555
+        H1118
+        A22 22 0 0 1 1140 577
+        V708
+        A22 22 0 0 1 1118 730
+        H60
+        Z"
+            fill="url(#tech-cardGlass)"
+            stroke="#A9C5A5"
+            stroke-opacity="0.16"
+            filter="url(#shadow)"
+        />
+
+        <rect
+            x="60"
+            y="555"
+            width="5"
+            height="175"
+            fill="#C9B8E8"
+            fill-opacity="0.75"
+        />
+
+        <text
+            x="92"
+            y="601"
+            fill="#C9B8E8"
+            font-family="Quicksand, sans-serif"
+            font-size="19"
+            font-weight="600">
+            TOOLS &amp; WORKFLOW
+        </text>
+
+        <text
+            x="92"
+            y="626"
+            fill="#AAA2B4"
+            font-family="Quicksand, sans-serif"
+            font-size="13">
+            Tools that keep development practical and consistent
+        </text>
+
+
+        <!-- Git -->
+        <rect x="92" y="648" width="115" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(106 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M15 4V26" />
+            <path d="M15 10L23 6" />
+            <path d="M15 18L23 14" />
+            <circle cx="15" cy="4" r="3" fill="#C9B8E8" />
+            <circle cx="15" cy="26" r="3" fill="#C9B8E8" />
+            <circle cx="23" cy="6" r="3" fill="#C9B8E8" />
+            <circle cx="23" cy="14" r="3" fill="#C9B8E8" />
+        </g>
+        <text x="153" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Git
+        </text>
+
+        <!-- GitHub -->
+        <rect x="223" y="648" width="125" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(235 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="15" cy="15" r="13" />
+            <path d="M10 21C7 20 6 18 6 15" />
+            <path d="M20 21C23 20 24 18 24 15" />
+            <path d="M10 11C12 9 18 9 20 11" />
+            <path d="M10 11V18" />
+            <path d="M20 11V18" />
+            <path d="M10 18C13 20 17 20 20 18" />
+        </g>
+        <text x="282" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            GitHub
+        </text>
+
+        <!-- Vite -->
+        <rect x="360" y="648" width="115" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(374 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linejoin="round">
+            <path d="M15 3L27 8L21 27L9 27L3 8L15 3Z" />
+            <path d="M15 7L11 17L15 15L19 17L15 7Z" />
+        </g>
+        <text x="421" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Vite
+        </text>
+
+        <!-- Docker -->
+        <rect x="489" y="648" width="125" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(503 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="4" y="12" width="6" height="5" />
+            <rect x="11" y="12" width="6" height="5" />
+            <rect x="18" y="12" width="6" height="5" />
+            <rect x="11" y="6" width="6" height="5" />
+            <rect x="18" y="6" width="6" height="5" />
+            <path d="M4 19H24C22 24 17 26 12 26C8 26 5 23 4 19Z" />
+        </g>
+        <text x="550" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Docker
+        </text>
+
+        <!-- Vercel -->
+        <rect x="628" y="648" width="125" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(642 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.8"
+            stroke-linejoin="round">
+            <path d="M15 4L27 25H3L15 4Z" />
+        </g>
+        <text x="689" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Vercel
+        </text>
+
+        <!-- VS Code -->
+        <rect x="767" y="648" width="135" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(781 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 7L4 11L9 15L4 19L9 23L24 27V3L9 7Z" />
+            <path d="M9 7L24 19" />
+            <path d="M9 23L24 11" />
+        </g>
+        <text x="828" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            VS Code
+        </text>
+
+        <!-- Figma -->
+        <rect x="916" y="648" width="105" height="54" rx="15"
+            fill="url(#tech-sageTile)"
+            stroke="#A9C5A5" stroke-opacity="0.16" />
+        <g transform="translate(930 659)"
+            fill="none"
+            stroke="#A9C5A5"
+            stroke-width="1.7">
+            <path d="M15 3H9C6 3 4 5 4 8C4 11 6 13 9 13H15V3Z" />
+            <path d="M15 3H21C24 3 26 5 26 8C26 11 24 13 21 13H15V3Z" />
+            <path d="M9 13C6 13 4 15 4 18C4 21 6 23 9 23C12 23 15 21 15 18V13H9Z" />
+            <path d="M15 13H21C24 13 26 15 26 18C26 21 24 23 21 23C18 23 15 21 15 18V13Z" />
+            <circle cx="9" cy="28" r="5" />
+        </g>
+        <text x="977" y="681"
+            fill="#A9C5A5"
+            font-family="Quicksand, sans-serif"
+            font-size="12"
+            font-weight="600">
+            Figma
+        </text>
+
+
+        <!-- ========================================================= -->
+        <!-- BOTTOM DETAIL -->
+        <!-- ========================================================= -->
+
+        <line
+            x1="430"
+            y1="762"
+            x2="770"
+            y2="762"
+            stroke="#C9B8E8"
+            stroke-opacity="0.12"
+        />
+
+        <circle
+            cx="600"
+            cy="762"
+            r="3"
+            fill="#C9B8E8"
+            fill-opacity="0.65"
+        />
+    </g>
 
 </svg>
